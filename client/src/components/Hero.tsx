@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as MainLogo } from '../assets/MainLogo.svg';
 import Button from './Button';
+import ComingSoon from '../assets/ComingSoon.png';
 
 type Props = {};
 
@@ -16,7 +17,8 @@ const Hero = (props: Props) => {
       </div>
       <div className="logoContainer">
         <MainLogo className="mainLogo" />
-        <Button />
+        {/* <Button /> */}
+        <img className="comingsoon" height="100%" src={ComingSoon} alt="" />
       </div>
     </div>
   );

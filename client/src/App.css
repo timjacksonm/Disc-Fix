@@ -1,3 +1,28 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #222725;
+  --basket-color: #222725;
+  --basket-color2: #25c372;
+}
+
+body.dark-theme {
+  --bg-color: #222725;
+  --text-color: #fff;
+  --basket-color: #fff;
+  --basket-color2: #25c372;
+  --basket-color2: #40c0fa;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
 /* available linked fonts: 'Bitter', 'Poppins', 'Varta' */
 * {
   padding: 0;
@@ -8,9 +33,20 @@
     'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+.comingsoon {
+  position: absolute;
+  z-index: 1;
+}
+
 .navbar {
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar button svg path {
+  fill: var(--text-color);
 }
 
 .basket {
@@ -26,7 +62,7 @@
 }
 
 .basket path {
-  fill: rgb(125, 163, 163);
+  fill: var(--basket-color2);
 }
 
 .home {
@@ -100,6 +136,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  color: inherit;
 }
 
 .button:hover {
@@ -133,6 +170,10 @@
     min-width: 1500px;
     max-height: 100%;
     right: -50vw;
+  }
+
+  .logoContainer {
+    padding-left: 0rem;
   }
 
   .textContainer {
@@ -169,6 +210,13 @@
     font-size: 1.5rem;
   }
 
+  .mainContent {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
   .mainContent {
     padding-left: 15rem;
     padding-right: 15rem;
