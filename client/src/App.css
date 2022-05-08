@@ -1,5 +1,176 @@
+/* available linked fonts: 'Bitter', 'Poppins', 'Varta' */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Bitter', serif, Roboto, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.navbar {
+  padding: 2rem 0;
+  border-bottom: 2px solid #000;
+}
+
+.basket {
+  position: absolute;
+  bottom: -150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 60vw;
+  max-height: 70%;
+}
+
+.basket path {
+  fill: rgb(125, 163, 163);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.mainContent {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  padding: 5rem 1rem;
+}
+
+.heroContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  max-width: 432px;
+  z-index: 1;
+}
+
+.heroContainer h1 {
+  font-family: 'Bitter';
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.heroContainer h2 {
+  margin-top: 1rem;
+  font-family: 'Varta';
+  font-size: 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+  min-height: 10rem;
+  min-width: 288px;
+  max-width: 470px;
+}
+
+.mainLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid rgba(64, 192, 250, 0.75);
+  border-radius: 20px;
+  width: 8rem;
+  height: 2rem;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.button:hover {
+  background-color: #40c0fa;
+  color: #fff;
+}
+
+@media only screen and (min-width: 502px) {
+  .heroContainer {
+    align-items: center;
+  }
+
+  .logoContainer {
+    min-width: 470px;
+    max-width: max-content;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mainContent {
+    padding: 5rem 5rem;
+  }
+
+  .heroContainer {
+    max-width: 50%;
+    align-items: unset;
+  }
+
+  .basket {
+    min-width: 1500px;
+    max-height: 100%;
+    right: -50vw;
+  }
+
+  .textContainer {
+    max-width: 553px;
+  }
+
+  .textContainer h1 {
+    font-size: 3rem;
+    line-height: 58px;
+  }
+
+  .textContainer h2 {
+    font-size: 2rem;
+    line-height: 34.8px;
+  }
+
+  .logoContainer {
+    max-width: 800px;
+    width: 100%;
+    height: 17rem;
+  }
+
+  .button {
+    max-width: 214px;
+    max-height: 50px;
+    width: 17vw;
+    height: 15vh;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button {
+    font-size: 1.5rem;
+  }
+
+  .mainContent {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
