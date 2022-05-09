@@ -1,9 +1,6 @@
-import React from 'react';
 import ToggleSchemeBtn from './ToggleSchemeBtn';
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <ToggleSchemeBtn />

@@ -1,11 +1,8 @@
-import React from 'react';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import { ReactComponent as Basket } from '../assets/disc-golf-basket.svg';
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="home">
       <Navbar />

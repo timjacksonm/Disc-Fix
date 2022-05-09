@@ -21,6 +21,7 @@ body {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* available linked fonts: 'Bitter', 'Poppins', 'Varta' */
@@ -62,7 +63,7 @@ button {
 }
 
 .basket path {
-  fill: var(--basket-color2);
+  fill: var(--basket-color);
 }
 
 .home {

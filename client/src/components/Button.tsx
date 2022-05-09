@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-const Button = (props: Props) => {
+const Button = () => {
   return <button className="button">Sign Up Free</button>;
 };
 
