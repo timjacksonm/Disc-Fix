@@ -10,6 +10,7 @@ const Home = () => {
         <Hero />
         <Basket className="basket" />
       </main>
+      <div className="footer">footer</div>
     </div>
   );
 };

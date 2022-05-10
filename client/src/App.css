@@ -40,7 +40,7 @@ button {
 }
 
 .navbar {
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   border-bottom: 2px solid #000;
   display: flex;
   justify-content: flex-end;
@@ -51,15 +51,9 @@ button {
 }
 
 .basket {
-  position: absolute;
-  bottom: -150px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-width: 60vw;
-  max-height: 70%;
+  height: 100%;
+  width: 70%;
+  max-width: 300px;
 }
 
 .basket path {
@@ -74,16 +68,16 @@ button {
 }
 
 .mainContent {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
 }
 
 .heroContainer {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 
 .textContainer {
@@ -145,6 +139,11 @@ button {
   color: #fff;
 }
 
+.footer {
+  padding: 3rem;
+  background-color: #25c372;
+}
+
 @media only screen and (min-width: 502px) {
   .heroContainer {
     align-items: center;
@@ -160,6 +159,8 @@ button {
 @media only screen and (min-width: 1000px) {
   .mainContent {
     padding: 5rem 5rem;
+    flex-direction: row;
+    align-items: unset;
   }
 
   .heroContainer {
@@ -168,9 +169,8 @@ button {
   }
 
   .basket {
-    min-width: 1500px;
-    max-height: 100%;
-    right: -50vw;
+    min-width: 400px;
+    margin-left: 10vw;
   }
 
   .logoContainer {
