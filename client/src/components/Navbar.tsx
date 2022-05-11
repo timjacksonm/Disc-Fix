@@ -2,9 +2,10 @@ import ToggleSchemeBtn from './ToggleSchemeBtn';
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
+      <h1>DISC-FIX</h1>
       <ToggleSchemeBtn />
-    </div>
+    </nav>
   );
 };
 

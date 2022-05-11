@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import { ReactComponent as Basket } from '../assets/disc-golf-basket.svg';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         <Hero />
         <Basket className="basket" />
       </main>
-      <div className="footer">footer</div>
+      <Footer />
     </div>
   );
 };
